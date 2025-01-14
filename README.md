@@ -1,0 +1,2 @@
+# TP1
+Repertoire pour le TP de PRÉPARATION DE LA SOLUTION D'IA POUR LA MISE EN PROD
