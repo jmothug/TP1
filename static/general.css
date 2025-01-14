@@ -1,0 +1,217 @@
+
+@charset "UTF-8";/*!
+ * Bootstrap Reboot v4.4.1 (https://getbootstrap.com/)
+ * Copyright 2011-2019 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
+@font-face {
+    font-family: csf;
+    src: url(/Fonts/fontello-csf/font/csf.eot);
+    src: url(/Fonts/fontello-csf/font/csf.eot) format('embedded-opentype'),url(/Fonts/fontello-csf/font/csf.woff2) format('woff2')
+    ,url(/Fonts/fontello-csf/font/csf.woff) format('woff'),url(/Fonts/fontello-csf/font/csf.ttf) format('truetype'),url(/Fonts/fontello-csf/font/csf.svg) format('svg');
+    font-style: normal;
+    text-rendering:optimizeLegibility}
+
+body [class*=" icon-"]:before,body [class^=icon-]:before {
+    font-family: csf!important;
+    font-style: normal;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    margin-left: .2em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.icon-youtube-play:before {
+    content: '\e811'
+}
+
+.icon-facebook:before {
+    content: '\e812'
+}
+
+.icon-facebook2:before {
+    content: '\e83b'
+}
+
+.icon-instagram:before {
+    content: '\f16d'
+}
+
+.navbar .glyph-logo-csf {
+    margin: 0 auto;
+    width: 160px
+}
+
+.navbar .glyph-logo-csf:before {
+    font-size: 65px
+}
+
+.glyph-logo-csf {
+    display: block;
+    margin: 6px 0;
+    position: relative;
+    width: 190px
+}
+
+.glyph-logo-csf:before {
+    color: #000;
+    content: "\e804";
+    display: inline-block;
+    font-family: csf;
+    font-size: 65px;
+    line-height: 70px;
+    margin: 0
+}
+
+.menu-sociaux {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between
+}
+
+.menu-sociaux .medias-sociaux ul {
+    padding: 1em 0 0 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0
+}
+
+.menu-sociaux .medias-sociaux li {
+    list-style: none
+}
+
+.menu-sociaux .medias-sociaux button {
+    vertical-align: bottom;
+    padding: 0;
+    height: 48px
+}
+
+.menu-sociaux .medias-sociaux a {
+    color: #082357;
+    font-size: 30px
+}
+
+.menu-sociaux .medias-sociaux a:hover {
+    text-decoration: none
+}
+
+.presse a:hover {
+    text-decoration: none
+}
+
+.presse h3 {
+    margin: .6em 0 .4em 0;
+    font-size: 1.3em
+}
+
+.presse .category-news {
+    background-color: #082357;
+    margin-top: -8px;
+    padding: .2em 1em
+}
+
+.presse .category-news span {
+    color: #fff
+}
+
+.menu-position {
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    display: flex;
+    align-items: center;
+    padding: .5rem 1rem;
+}
+
+.bg-menu {
+    background-color: #5792f3 !important;
+}
+
+.btn-secundaire {
+    padding: 1rem 2.4rem;
+    font-size: .94rem;
+    background-color: #33b5e5!important;
+    color: #fff !important;
+    border-radius: 10px 10px 10px 10px !important;
+}
+
+.text-principal {
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.btn-rafraichir {
+    background-color: #0757ad !important;
+    border-radius: 10px 10px 10px 10px !important;
+}
+
+.subheader {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.form-control-donnees {
+    display: block;
+    width: 10%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+
+.form-control-donnees2 {
+    display: block;
+    width: 30%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.margin-head-table{
+    margin-right: 10px;
+    margin-left: 15px;
+}
+
+.margin-head-table2{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.margin-table{
+    margin: 50px;
+    margin-bottom: 10px;
+}

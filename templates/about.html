@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Application de prédiction de l'hépatite</title>
+	 <!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+<link rel="stylesheet" href="/static/general.css">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/css/mdb.min.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container menu-sociaux">
+        <div class="logo-cegep">
+			<a href="http://www.csfoy.ca/" target="_blank"><img src="{{url_for('static', filename='logo-csfoy.png')}}" class="glyph-logo-csf"/></a>
+        </div>
+        <div class="medias-sociaux">
+            <ul>
+                <li><a href="https://www.facebook.com/cegepsaintefoy" target="_blank"><img src="{{url_for('static', filename='icon-facebook.png')}}" class="icon-facebook"/></a></li>
+                <li><a href="https://www.instagram.com/cegepsaintefoy/" target="_blank"><img src="{{url_for('static', filename='icon-instagram.png')}}" class="icon-instagram"/></a></li>
+                <li><a href="https://www.youtube.com/user/cegepstefoy" target="_blank"><img src="{{url_for('static', filename='icon-youtube-play.png')}}" class="icon-youtube-play"/></a></li>
+            </ul>
+
+        </div>
+    </div>
+	<!-- 
+<div class="row">
+	<div class="col-sm-4"></div>
+	<div class="col-sm-4">
+		<img src="../images/logo-csfoy.png" alt="Stickman" width="300" height="200">
+	</div>
+	<div class="col-sm-4"></div>
+</div>
+-->
+<div class="bg-menu">
+<div class="container">
+	<nav class="navbar-expand-md navbar-dark menu-position">
+		<!--  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+		   <span class="navbar-toggler-icon"></span>
+		 </button>-->
+	   
+		 <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/">Accueil <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/dataset">Données</a>
+                </li>
+                 <li class="nav-item">
+                  <a class="nav-link" href="/about">À propos</a>
+                </li>
+              </ul>
+	    </div>
+		<!--    <form class="form-inline my-2 my-lg-0" method="POST" action="/predict">
+			 <input class="form-control mr-sm-2" type="text" name="namequery" placeholder="" aria-label="Search">
+			 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Predict</button>
+		   </form> -->
+	   </nav>
+</div>
+</div>
+<!-- blue #0686e4 -->
+<div class="jumbotron" style="background:#347bf1;color:#fff">
+    <div class="container">
+      <h4 class="text-principal">Prédiction de la mortalité par hépatite</h4>
+      <p>à l'aide de l'apprentissage automatique </p>
+    </div>
+  </div>
+<br/>
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+          <div class="card mb-10 shadow-sm" id="custom_card">
+          	<h4><b>A propos de l'hépapite:</b></h4>
+<p>
+    L’hépatite désigne toute inflammation aiguë ou chronique du foie. Les causes les plus connues étant les infections virales du foie et l'alcoolisme. Mais l'hépatite peut aussi être due à certains médicaments ou à un trouble du système immunitaire de l'organisme. L'hépatite est dite aiguë lors du contact de l'organisme avec le virus ou chronique lorsqu'elle persiste au-delà de six mois après le début de l'infection. L'hépatite peut évoluer ou non vers une forme grave (fulminante), une cirrhose ou un cancer.
+
+    L'hépatite grave peut mener à la destruction du foie et, sauf transplantation hépatique, à la mort.
+    
+    La journée mondiale contre l'hépatite, journée internationale consacrée à la prévention, la détection ainsi que le traitement des hépatites, est organisée par l'Organisation mondiale de la santé (OMS) tous les 28 juillet1.
+</p>
+<p>
+    <h4><b>Signes et symptômes</b></h4>
+    La grande majorité des hépatites est asymptomatique c’est-à-dire ne présente aucun symptôme.
+
+Cependant, il existe des symptômes qui ne sont pas spécifiques tels qu'une fatigue chronique, des nausées, la fièvre, la perte d'appétit, les maux de tête, les urines foncées à rougeâtres (et excréments jaune clair, traduisant un problème de bilirubine), les douleurs ostéoarticulaires.
+
+La jaunisse (ictère) est caractéristique de cette maladie mais elle n'est pas spécifique.
+</p>
+<p>
+    <h4><b>Épidémiologie</b></h4>
+    Selon l'OMS, l’hépatite virale touche 400 millions de personnes dans le monde, mais 95 % des personnes ayant une hépatite ignorent leur infection1. Découvert en 1989, le virus de l’hépatite C est la première cause d’hépatites chroniques et de cirrhose en Europe et en Amérique du Nord2.
+</p>
+<br>
+<br>	
+<p>Pour plus dinformation. Visitez: <a class="nav-link" href=" https://fr.wikipedia.org/wiki/H%C3%A9patite" target="_blank"> https://fr.wikipedia.org/wiki/H%C3%A9patite</a></p>
+		</div>
+	</div>
+</div>
+</div>
+
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/js/mdb.min.js"></script>
+
+</body>
+</html>

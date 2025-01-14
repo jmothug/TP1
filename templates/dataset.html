@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Application de prédiction de l'hépatite</title>
+     <!-- Font Awesome -->
+     <link href="{{ url_for('static', filename='all.css') }}" rel="stylesheet">
+  <link rel="stylesheet" href="/static/general.css">
+  <!-- Bootstrap core CSS -->
+  <link href="{{ url_for('static', filename='bootstrap.min.css') }}" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="{{ url_for('static', filename='mdb.min.css') }}" rel="stylesheet">
+
+  
+  <script type="text/javascript" src="/static/jquery-3.7.1.js"></script>
+  <script type="text/javascript" src="/static/bootstrap-3.3.7.min.js"></script>
+
+  <script type="text/javascript" src="/static/dataTables.js"></script>
+  <script type="text/javascript" src="/static/dataTables.bootstrap.js"></script>
+  </head>
+<body>
+ 
+ <script>
+    window.onload = function () {
+      new DataTable('#example');
+    };
+
+    $(document).ready(function(){
+      document.getElementById("dt-length-0").setAttribute("class", "margin-head-table");
+  });
+</script>
+
+<div class="container menu-sociaux">
+  <div class="logo-cegep">
+<a href="http://www.csfoy.ca/" target="_blank"><img src="{{url_for('static', filename='logo-csfoy.png')}}" class="glyph-logo-csf"/></a>
+  </div>
+  <div class="medias-sociaux">
+      <ul>
+          <li><a href="https://www.facebook.com/cegepsaintefoy" target="_blank"><img src="{{url_for('static', filename='icon-facebook.png')}}" class="icon-facebook"/></a></li>
+          <li><a href="https://www.instagram.com/cegepsaintefoy/" target="_blank"><img src="{{url_for('static', filename='icon-instagram.png')}}" class="icon-instagram"/></a></li>
+          <li><a href="https://www.youtube.com/user/cegepstefoy" target="_blank"><img src="{{url_for('static', filename='icon-youtube-play.png')}}" class="icon-youtube-play"/></a></li>
+      </ul>
+
+  </div>
+</div>
+	<!-- 
+<div class="row">
+	<div class="col-sm-4"></div>
+	<div class="col-sm-4">
+		<img src="../images/logo-csfoy.png" alt="Stickman" width="300" height="200">
+	</div>
+	<div class="col-sm-4"></div>
+</div>
+-->
+<div class="bg-menu">
+<div class="container">
+	<nav class="navbar-expand-md navbar-dark menu-position">
+		<!--  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+		   <span class="navbar-toggler-icon"></span>
+		 </button>-->
+	   
+		 <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Accueil <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/dataset">Données</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="/about">À propos</a>
+        </li>
+        </ul>
+	    </div>
+		<!--    <form class="form-inline my-2 my-lg-0" method="POST" action="/predict">
+			 <input class="form-control mr-sm-2" type="text" name="namequery" placeholder="" aria-label="Search">
+			 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Predict</button>
+		   </form> -->
+	   </nav>
+</div>
+</div>
+<!-- blue #0686e4 -->
+<div class="jumbotron" style="background:#347bf1;color:#fff">
+    <div class="container">
+      <h4 class="text-principal">Prédiction de la mortalité par hépatite</h4>
+      <p>à l'aide de l'apprentissage automatique </p>
+    </div>
+  </div>
+<br/>
+
+
+ {{ df_table.to_html(table_id="example", classes="table table-striped table-bordered",na_rep="-") | safe}}
+
+
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/js/mdb.min.js"></script>
+
+</body>
+</html>
