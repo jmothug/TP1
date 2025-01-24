@@ -11,14 +11,10 @@ from setuptools import setup, find_namespace_packages
 
 # Package meta-data.
 NAME = 'regression_model'
-# DESCRIPTION = 'Train and deploy regression model.'
-# URL = 'your github project'
-# EMAIL = 'your_email@email.com'
-# AUTHOR = 'Your name'
-DESCRIPTION = 'Former et deployer un modele de regression.'
-URL = 'https://github.com/cegep2020/cours-A61.git'
-EMAIL = 'aamami@csfoy.ca'
-AUTHOR = 'Cegep AA'
+DESCRIPTION = 'TP.'
+URL = 'https://github.com/jmothug/TP1'
+EMAIL = '2392370@csfoy.ca'
+AUTHOR = 'Joselio Marques'
 REQUIRES_PYTHON = '>=3.6.0'
 
 
